@@ -48,7 +48,9 @@
     (wordreference-replace-string "<br>" "\n")
     (wordreference-replace-regexp "[ ]*<li>[ ]*" "\n* ")
     (wordreference-replace-regexp "<span.*?class=i.*?>\\(.*?\\)</span>" "\t\\1")
-    (wordreference-replace-regexp "<span.*?>\\(.*?\\)</span>" "\\1"))
+    (wordreference-replace-regexp "<span.*?>\\(.*?\\)</span>" "\\1")
+    (local-set-key (kbd "q") 'delete-window) ; by adding this I'd get off the "* wordreference *" buffer and back where I was at. 
+       )
   nil)
 
 
